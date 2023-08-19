@@ -71,7 +71,7 @@ commands = {
     end,
     ["chatlogs"] = function(args)
         if not game.CoreGui:FindFirstChild("gagarba") then
-            loadstring(game:HttpGet("https://pastebin.com/raw/JpjsMxba"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/8hvBkf2f"))()
         end
     end,
     ["rejoin"] = function(args)
