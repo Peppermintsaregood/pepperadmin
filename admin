@@ -10,7 +10,8 @@ local player = players.LocalPlayer
 local char = player.Character or player.CharacterAdded:Wait()
 local hrp = char:FindFirstChild("HumanoidRootPart")
 local hum = char.Humanoid
-
+local Lighting = game.Lighting
+origsettings = {abt = Lighting.Ambient, oabt = Lighting.OutdoorAmbient, brt = Lighting.Brightness, time = Lighting.ClockTime, fe = Lighting.FogEnd, fs = Lighting.FogStart, gs = Lighting.GlobalShadows}
 
 if game.CoreGui:FindFirstChild("noimnotwdym") then
     game.CoreGui:FindFirstChild("noimnotwdym"):Destroy()
@@ -332,6 +333,15 @@ commands = {
                 end
             end)
         end)
+    end,
+    ["rlighting"] = function(args)
+        game.Lighting.Ambient = origsettings.abt
+        game.Lighting.OutdoorAmbient = origsettings.oabt
+        game.Lighting.Brightness = origsettings.brt
+        game.Lighting.ClockTime = origsettings.time
+        game.Lighting.FogEnd = origsettings.fe
+        game.Lighting.FogStart = origsettings.fs
+        game.Lighting.GlobalShadows = origsettings.gs
     end
 }
 
