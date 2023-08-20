@@ -66,7 +66,7 @@ end)
 -- textbox handlement:
 commands = {
 ["phase"] = function(args)
-	hrp.CFrame = hrp.CFrame * CFrame.new(0,0,-tonumber(args[2])
+	hrp.CFrame = hrp.CFrame * CFrame.new(0,0,-tonumber(args[2]))
 end,
 ["enableshiftlock"] = function(args)
 	player.DevEnableMouseLock = true
