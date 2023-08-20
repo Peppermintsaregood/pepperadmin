@@ -65,6 +65,9 @@ runService.Heartbeat:Connect(function(deltaTime)
 end)
 -- textbox handlement:
 commands = {
+["enableshiftlock"] = function(args)
+	player.DevEnableMouseLock = true
+end,
 ["dex"] = function(args)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
     end,
