@@ -20,8 +20,8 @@ local ScreenGui = Instance.new("ScreenGui")
 local TextBox = Instance.new("TextBox")
 local oldgrav = workspace.Gravity
 local keys = {}
-local toggles = {}
-local toggleMeaning = {}
+local wp = {}
+local wpmeaning = {}
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
