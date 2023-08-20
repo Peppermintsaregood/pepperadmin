@@ -66,8 +66,8 @@ end)
 -- textbox handlement:
 commands = {
 ["dex"] = function(args)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
-end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Peppermintsaregood/pepperadmin/main/admin"))()
+    end,
     ["goto"] = function(args)
         local target = peppermints.findUser(args[2])
         hrp.CFrame = target.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,2)
