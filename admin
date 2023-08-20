@@ -66,7 +66,7 @@ end)
 -- textbox handlement:
 commands = {
 ["dex"] = function(args)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Peppermintsaregood/pepperadmin/main/admin"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
     end,
     ["goto"] = function(args)
         local target = peppermints.findUser(args[2])
